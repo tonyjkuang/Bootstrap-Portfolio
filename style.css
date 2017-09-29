@@ -9,15 +9,12 @@ body {
 /* general */
 
 .container {
-	width: 100%;
 	margin-left: 50px;
 }
 
-h1,
-h2,
-h3,
 p {
-  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 18px;
 }
 
 p:last-child {
@@ -33,10 +30,8 @@ h3 {
 }
 
 h1 {
-  padding-bottom: 20px;
   font-size: 30px;
   line-height: 49px;
-  border-bottom: 3px solid #ddd;
 }
 
 h2,
@@ -78,40 +73,119 @@ h3 {
 
 }
 
+/* Index */
 
 .img-thumbnail {
-	width: 20%;
+	width: 30%;
 	float: left;
 	margin-right: 10px;
 }
 
-/* Content */
-
-.col-md-9 {
-	float: left;
-
+.col-md-8 {
+	background-color: #ffffff;
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 60%;
 }
 
-.col-md-3 {
+.col-md-4 {
+	background-color: #ffffff;
 	float: right;
-
+	margin-top: 20px;
+	margin-right: 10px;
+	width: 30%;
 }
 
 img {
-	width: 70px;
+	width: 100px;
+	padding: 10px;
+}
+
+/* Portfolio */
+
+.work {
+  position: relative;
+  float: left;
+  width: 300px;
+  margin: 20px 0 25px;
+  overflow: auto;
+}
+
+.work:nth-child(even) {
+  margin-right: 40px;
+}
+
+.work img {
+  width: 100%;
+  border: 0 none;
+  opacity: 1;
+}
+
+.work h3 {
+  position: absolute;
+  bottom: 20px;
+  width: 93%;
+  left: 10px;
+  padding: 15px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+  text-align: center;
+  background: #4aaaa5;
+  border-bottom: 0;
+}
+
+/* Contact */
+
+#contact-form ul {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+#contact-form li {
+  margin-bottom: 10px;
+}
+
+label,
+input[type=text],
+input[type=email],
+textarea {
+  display: block;
+  width: 90%;
+  font-size: 18px;
+}
+
+input[type=text],
+input[type=email],
+textarea {
+  height: 35px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+}
+
+textarea {
+  height: 200px;
+}
+
+input[type=submit] {
+  padding: 10px 30px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  background: #4aaaa5;
+  border: 0 none;
+  margin-bottom: 10px;
+  margin-left: 40px;
 }
 
 /* footer */
 
-footer {
-	width: 100%;
-  padding: 30px 0;
-  clear: both;
-  font-size: 12px;
-  color: #fff;
-  color: #ccc;
-  text-align: center;
-  background: #666;
-  border-top: 8px solid #4aaaa5;
-	
+.footer {
+	padding: 30px 0;
+	background-color: #666;
+	border-top: 8px solid #4aaaa5;
+	font-size: 16px;
+	text-align: center;
 }
