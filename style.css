@@ -2,11 +2,14 @@ body {
 	background: url("cloudy-day.png");
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* general */
 
 .container {
-	background-color: #ffffff;
-	width: 90%;
+	width: 100%;
 	margin-left: 50px;
 }
 
@@ -82,7 +85,21 @@ h3 {
 	margin-right: 10px;
 }
 
+/* Content */
 
+.col-md-9 {
+	float: left;
+
+}
+
+.col-md-3 {
+	float: right;
+
+}
+
+img {
+	width: 70px;
+}
 
 /* footer */
 
