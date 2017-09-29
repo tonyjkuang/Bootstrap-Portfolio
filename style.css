@@ -94,16 +94,14 @@ h3 {
 .col-md-8 {
 	background-color: #ffffff;
 	margin-top: 20px;
-	margin-left: 20px;
 	width: 60%;
+	margin-left: 50px;
 }
 
 .col-md-4 {
 	background-color: #ffffff;
-	float: right;
 	margin-top: 20px;
-	margin-right: 10px;
-	width: 30%;
+	margin-left: 20px;
 }
 
 img {
@@ -198,4 +196,50 @@ input[type=submit] {
 	border-top: 8px solid #4aaaa5;
 	font-size: 16px;
 	text-align: center;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 980px) {
+	.col-md-8 {
+		margin: 0;
+		width: 500px;
+		float: left;
+	}
+	.col-md-4 {
+		width: 240px;
+		float: right;
+		margin: 0;
+		margin-left: 10px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.col-md-8 {
+		width: 90%;
+		margin-bottom: 20px;
+	}
+	.col-md-4 {
+		width: 90%;
+		float:left;
+		margin: 0;
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.navbar-header {
+		width: 100%;
+		margin: 0;
+	}
+	#brand {
+		margin-left: 250px;
+	}
+	.navbar-header {
+		animation-play-state: paused;
+	}
+	.img-thumbnail {
+		width: 500px;
+		height: 600px;
+	}
 }
