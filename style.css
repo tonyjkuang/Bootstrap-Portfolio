@@ -45,12 +45,22 @@ h3 {
 	height: 75px;
 }
 
+@keyframes example {
+    0%   {background-color: #4aaaa6; left: 0px; top: 0px;}
+    25%  {background-color: yellow; left:200px; top: 0px;}
+    50%  {background-color: blue; left: -100px; top: 0px;}
+    100% {background-color: green; left: 0px; top: 0px;}
+}
+
 .navbar-header {
 	background-color: #4aaaa6;
+	position: relative;
 	top:0;
 	width: 175px;
 	height: 75px;
 	margin-left: 100px;
+	animation-name: example;
+    animation-duration: 8s;
 }
 
 #brand {
