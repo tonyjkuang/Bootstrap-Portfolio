@@ -56,7 +56,7 @@ h3 {
 	background-color: #4aaaa6;
 	position: relative;
 	top:0;
-	width: 175px;
+	width: 200px;
 	height: 75px;
 	margin-left: 100px;
 	animation-name: example;
@@ -67,7 +67,7 @@ h3 {
 	font-family: Georgia, Times, "Times New Roman", serif;
 	font-size: 23px;
 	color: #ffffff;
-	margin: 10px;
+	margin: 10px 0 0 10px;
 }
 
 .page-header {
@@ -80,7 +80,6 @@ h3 {
 	font-size: 18px;
 	border-left: 1px solid #efefef;
 	margin: 10px;
-
 }
 
 /* Index */
@@ -228,18 +227,24 @@ input[type=submit] {
 }
 
 @media screen and (max-width: 640px) {
+	.navbar {
+		position: static;
+	}
 	.navbar-header {
 		width: 100%;
 		margin: 0;
+		animation-play-state: paused;
 	}
 	#brand {
 		margin-left: 250px;
 	}
-	.navbar-header {
-		animation-play-state: paused;
+	.navbar-right a {
+		background-color: #ffffff;
+		margin: 0;
 	}
 	.img-thumbnail {
 		width: 500px;
 		height: 600px;
 	}
+
 }
